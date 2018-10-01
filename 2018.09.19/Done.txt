@@ -1,0 +1,3 @@
+sukurta duomenu baze
+pasijungta prie db
+Registracija i duomenu baze

@@ -1,0 +1,73 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    
+}
+
+.navbar{
+    background-color: transparent;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar a {
+    color: white;
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.navbar a:hover {
+    background-color: grey;
+    opacity: 1;
+}
+
+.registration {
+    background-color: transparent;
+    width: 400px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 15px; 
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    margin: 0 auto;
+
+}
+
+.lytis {
+    display: inline-block;
+}
+
+.button {
+    background-color: rgb(144, 238, 144);
+    color: black;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    transition-duration: 0.3s;
+    /* float: right; */
+    /* margin-right: 28px; */
+    margin-top: 10px;
+    text-align: center;
+}
+
+.field {
+    width: 50%;
+    align-content: flex-end;
+}
+
+.button:hover {
+    background-color: green;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10%;
+    padding-bottom: 0;
+}

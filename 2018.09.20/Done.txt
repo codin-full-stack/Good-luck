@@ -1,0 +1,2 @@
+Vartotoju paieska duomenu bazeje pagal emaila ir duomenu atvaizdavimas.
+Log in i duomenu baze ir profile info su sesija.

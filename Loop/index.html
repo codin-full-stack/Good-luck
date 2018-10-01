@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mindaugas</title>
+
+<style>
+
+.registration {
+    background-color: rgb(245, 245, 245);
+    width: 200px;
+    border: 5px, black;
+    padding: 15px; 
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    margin: 0 auto;
+    /* margin-top: 40%; */
+    
+}
+
+body {
+    background-color: darkgray;
+}
+
+.button {
+    background-color: lightgreen;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    transition-duration: 0.3s;
+    /* float: right; */
+    /* margin-right: 28px; */
+    margin-top: 10px;
+    text-align: center;
+}
+
+.field {
+    width: 100%;
+}
+
+.button:hover {
+    background-color: green;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10%;
+    padding-bottom: 0;
+}
+
+
+</style>
+
+</head>
+<body>
+    
+<h1>Registracija</h1>
+
+<div class="registration">
+    <form action="action.php" method="POST">
+        <label for="name">
+            Jūsų vardas:
+        </label>
+        <input class="field" type="text" id="name" name="name" value="">
+         
+    <br>
+    
+        <label for="pavarde">
+            Jūsų pavardė:
+        </label>
+     <input class="field" type="text" id="pavarde" name="pavarde" value="">    
+
+     <br>
+
+        <label for="skaicius">
+            Skaicus:
+        </label>
+    <input class="field" type="text" id="skaicius" name="skaicius" value="">
+
+    <div class="">
+    
+    <input type="submit" class="button" >  
+
+    </div>
+    
+    </form>
+
+</div>
+    
+<br>
+
+</body>
+</html>

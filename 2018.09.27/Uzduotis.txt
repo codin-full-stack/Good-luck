@@ -1,0 +1,2 @@
+Redaguoti/trinti komentarus;
+rodyti edit,delete,comment and posto tik prisijungusiam vartotojui;

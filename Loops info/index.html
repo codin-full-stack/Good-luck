@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mindaugas</title>
+
+<style>
+
+.registration {
+    background-color: rgb(245, 245, 245);
+    width: 400px;
+    border: 5px, black;
+    padding: 15px; 
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    margin: 0 auto;
+    /* margin-top: 40%; */
+    
+}
+
+.lytis {
+    display: inline-block;
+
+}
+
+body {
+    background-color: darkgray;
+}
+
+.button {
+    background-color: lightgreen;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    transition-duration: 0.3s;
+    /* float: right; */
+    /* margin-right: 28px; */
+    margin-top: 10px;
+    text-align: center;
+}
+
+.field {
+    width: 50%;
+    align-content: flex-end;
+}
+
+.button:hover {
+    background-color: green;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10%;
+    padding-bottom: 0;
+}
+
+
+</style>
+
+</head>
+<body>
+    
+<h1>Registracija</h1>
+
+<div class="registration">
+    <form action="action.php" method="POST">
+        
+        <label for="name">
+            Jūsų vardas:
+        </label>
+        <input class="field" type="text" id="name" name="name" >        
+        
+        <br>
+        
+        <label for="pavarde">
+            Jūsų pavardė:
+        </label>
+        <input class="field" type="text" id="pavarde" name="pavarde" >    
+
+        <br>
+
+        <label for="amzius">
+            Amzius:
+        </label>
+        <input class="field" type="number" id="amzius" name="amzius" >
+
+        <br>
+        
+        <label for "miestas">
+            Miestas:
+        </label>
+        <select id="miestai" name="miestai">
+            <option value="1">Vilnius</option>
+            <option value="2">Kaunas</option>
+            <option value="3">Klaipeda</option>
+            <option value="4">Siauliai</option>
+            <option value="5">Panevezys</option>
+        </select>
+
+        <br>
+
+        <label for="psw">
+            Slaptazodis:
+        </label>
+        <input class="field" type="password" name="psw">
+
+        <br>
+        Lytis:
+        <label for="lytis" class="radio">
+            
+            <input type="radio" name="lytis" value="vyras">Vyras
+        </label>
+        
+        
+        
+        <label for="lytis" class="radio">
+            <input type="radio" name="lytis" value="moteris">Moteris
+        </label>
+        
+        
+        
+        <label for="lytis" class="radio">
+            <input type="radio" name="lytis" value="kita">Kita
+        </label>
+        
+        <br>
+        
+        <label for="gimtadienis">
+            Gimimo data
+        </label>
+        <input type="date" type="date" name="gimtadienis">
+
+        <br>
+
+        <input type="checkbox" type="checkbox" name="sutikimas">
+        Sutikimas su salygomis
+
+        <br>
+
+        <input type="reset">
+        <input type="submit" class="button" >  
+
+
+    <div class="">
+    
+
+    </div>
+    
+    </form>
+
+</div>
+    
+<br>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+Editinami postai tik tie kuriuos sukure useris;
+trinami userio postai;
+Parasyti Posto autoriu;

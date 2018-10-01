@@ -1,0 +1,2 @@
+UPDATE vardo pakeitimas prisijungus.
+Visu duomenu keitimas isskyrus lyties ir miesto.
