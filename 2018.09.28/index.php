@@ -1,6 +1,6 @@
 <?php 
 include 'header.php';
-echo "komentaras";
+echo "koment";
 ?>
 
 <h1>Registracija</h1>
