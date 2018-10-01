@@ -1,5 +1,6 @@
 <?php 
-include 'header.php'
+include 'header.php';
+echo "komentaras";
 ?>
 
 <h1>Registracija</h1>
