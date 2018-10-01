@@ -15,6 +15,7 @@ if (isset($_SESSION['id'])){
     // var_dump($user);
 
     if(!empty($user)){
+        unset($user['password']);
         foreach ($user as $key => $value) {
             echo $key . ': ' . $value . '<br>';
         }    
