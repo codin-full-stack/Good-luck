@@ -1,10 +1,10 @@
 <?php
 include 'header.php';
-echo 'DAR NEVEIKIA';
+// echo 'DAR NEVEIKIA';
 ?>
 
 
-<!-- <div class='paieska'>
+<div class='paieska'>
 
     <form action="searchPosts.php" method="GET">
             
@@ -17,7 +17,7 @@ echo 'DAR NEVEIKIA';
         
         <input type="submit" class="button" value="Find">
         <a href='index.php'>Back</a>
-</div> -->
+</div>
 
 
 <?php
