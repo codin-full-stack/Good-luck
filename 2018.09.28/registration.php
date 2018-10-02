@@ -1,10 +1,5 @@
-<head>
-<link rel="stylesheet" type="text/css" href="styless.css">
-</head>
 <?php
-    include 'menu.php';
-    include 'config.php';
-    // include 'header.php';
+    include 'header.php';
 ?>
 <div class="registration">
     <?php include 'form2.php'; ?>

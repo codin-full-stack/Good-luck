@@ -2,6 +2,11 @@ body{
     background-color: #4AA272;
 }
 
+a {
+    text-decoration: none;
+}
+    
+
 .form {
     background-color: #FFFFFF;
     position: absolute;
@@ -23,27 +28,220 @@ body{
     max-width: 100%;
 }
 
-.button1 {
+.login {
+    width: 50%;
+}
+
+.register {
+    width: 50%;
+}
+
+a.button1 {
     background-color: #FFFFFF;
     border: none;
     color: #000000;
-    width: 50%;
     padding: 12px 50px;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
+    width: 40%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.button {
+a.button2 {
     background-color: #E1E1E1;
     border: none;
-    width: 50%;
     color: white;
     padding: 12px 50px;
     text-align: center;
     display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    width: 40%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.infobox{
+    width: 100%;
+    padding-top: 35px;
+}
+
+.email{
+    max-width: 100%;
+    margin: 20px;
+}
+
+.pass{
+    max-width: 100%;
+    margin: 20px;
+}
+
+.field {
+    background: transparent;
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom-color: #ECECEC;
+    font-weight: 200;
+    padding-left: 0;
+    width: 100%;
+}
+
+.bottom {
+    display: flex;
+    max-width: 100%;
+    margin: 40px 10px 10px 10px;
+}
+
+.forgot {
+    margin-top: 13px;
+    margin-left: 14px;
+}
+
+.signin {
+    margin-left: 65px;
+}
+
+.button3 {
+    background-color: #4AA272;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    width: 110px;
+    height: 45px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
 
+.button3:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+/** REGISTRACIJOS LAUKELIO STILIUS */
+
+.regform {
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 333px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height: 430px;
+    overflow:auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.regbox {
+    max-width: 100%;
+    margin: 0 25px;
+    padding-top: 35px;
+}
+
+.regtopbox {
+    display: flex;
+    max-width: 100%;
+}
+
+a.button11 {
+    background-color: #E1E1E1;
+    border: none;
+    color: #FFFFFF;
+    padding: 12px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    width: 40%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a.button21 {
+    background-color: #FFFFFF;
+    border: none;
+    color: #000000;
+    padding: 12px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    width: 40%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button4 {
+    margin-top: 55px;
+    margin-left: 195px;
+}
+
+.button4 {
+    background-color: #4AA272;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 110px;
+    height: 45px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.button4:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/** NAVIGATION BAR STYLE */
+
+ul {
+    list-style-type: none;
+    margin: -8px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }

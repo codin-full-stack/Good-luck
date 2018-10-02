@@ -1,6 +1,5 @@
 <?php 
 include 'header.php';
-echo "frdsrkgjndrgk";
 ?>
 
 <h1>Registracija</h1>
