@@ -20,6 +20,7 @@ while ($post = $result->fetch_assoc()){
             echo "<div class='post-box'>";
                 echo 'Autorius - ' . $postUsers['name'] . '&nbsp' . $postUsers['lastname'] . '<br>';
                 echo '<strong>' . $post['title'] . '</strong>' . '<br>';
+                /** IDETI NUOTRAUKAS */
                 echo substr($post['content'], 0, 80 ) . '...' . '<br>' . '<br>';        
                 if(strlen($post['content']) > 79){
                     echo '<a href="post.php?id='.$post['id'].'">READ MORE</a> &nbsp&nbsp&nbsp';
@@ -35,6 +36,7 @@ while ($post = $result->fetch_assoc()){
         echo "<div class='post-box'>";
             echo 'Autorius - ' . $postUsers['name'] . '&nbsp' . $postUsers['lastname'] . '<br>';
             echo '<strong>' . $post['title'] . '</strong>' . '<br>';
+            /** IDETI NUOTRAUKAS */
             echo substr($post['content'], 0, 80 ) . '...' . '<br>' . '<br>';        
             if(strlen($post['content']) > 79){
                 echo '<a href="post.php?id='.$post['id'].'">READ MORE</a> &nbsp&nbsp&nbsp';

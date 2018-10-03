@@ -1,10 +1,7 @@
-<?php
-/** PRISIJUNGIMO FORMA SU SLAPTAZODZIU I DUOMENU BAZE*/
-?>
-
 <div class='login'>
-    <form action="loginDB.php" method="POST">
-        
+
+    <form action="" method="POST">
+    
         <label for="name">
             El. pastas:
         </label>
@@ -12,15 +9,17 @@
         
         <br>
         
-        <label for="loginpass">
+        <label for="pavarde">
             Slaptazodis:
         </label>
-        <input class="field" type="password" id="loginpass" name="loginpass" >    
+        <input class="field" type="password" id="pavarde" name="loginpass" >    
 
         <br>
                 
         <input type="reset" value='Reset'>
         <input type="submit" class="button" value="Log in">
+        
         <a href='index.php'>Back</a>
+
     </form>
 </div>
