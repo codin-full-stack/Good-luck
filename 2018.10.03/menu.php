@@ -19,7 +19,7 @@
         </li>
 
         <li class="navbarRegister">
-            <a href="registrationForm.html">Register</a>
+            <a href="registration.php">Register</a>
         </li>
         <li class="loggedin">
             <?php

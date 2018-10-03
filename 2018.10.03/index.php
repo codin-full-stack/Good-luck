@@ -3,7 +3,7 @@ include 'header.php';
 
 // $sql = "select * from posts ORDER BY laikas desc";
 // $result = $con->query($sql);
-// ?> <div class="contentBox"> <?php
+// 
 // while ($post = $result->fetch_assoc()){
    
 //     $userid = $post['user_id'];
@@ -14,7 +14,7 @@ include 'header.php';
 
 //     var_dump($post['id']);
    
-//     if(isset($_SESSION['id'])){ ?> <div class="content"> <?php     
+//     if(isset($_SESSION['id'])){     
 //             echo "<div class='post-box'>";
 //                 echo 'Autorius - ' . $postUsers['name'] . '&nbsp' . $postUsers['lastname'] . '<br>';
 //                 echo '<strong>' . $post['title'] . '</strong>' . '<br>';
@@ -29,8 +29,8 @@ include 'header.php';
 //                 }   
 //                 echo '<a href="comment_new.php?id='.$post['id'].'">Komentuoti</a> &nbsp&nbsp&nbsp';
 //                 echo '<a href="post.php?id='.$post['id'].'">Komentarai</a>';       
-//             echo "</div>"; ?> </div> <?php   
-//     } else { ?> <div class="content"> <?php
+//             echo "</div>";   
+//     } else {
 //         echo "<div class='post-box'>";
 //             echo 'Autorius - ' . $postUsers['name'] . '&nbsp' . $postUsers['lastname'] . '<br>';
 //             echo '<strong>' . $post['title'] . '</strong>' . '<br>';
@@ -40,55 +40,62 @@ include 'header.php';
 //                 echo '<a href="post.php?id='.$post['id'].'">READ MORE</a> &nbsp&nbsp&nbsp';
 //             }        
 //             echo '<a href="post.php?id='.$post['id'].'">Komentarai</a>';       
-//         echo "</div>"; ?> </div> <?php
+//         echo "</div>";
 //     }
 // }
 
-?> </div> 
+?>
 
-<div class="content-box">
-    <div class="content-pic">
-        <img src="monkey.jpg" alt="monkey">
-        <div class="content-title">
-        bla bla bla
+
+<div class="content">
+
+    <div class="content-box">
+        <div class="content-pic">
+            <img src="monkey.jpg" alt="monkey">
+            <div class="content-title">
+            bla bla blabla bla blabla bla blabla bla blabla bla bla
+            bla bla blabla bla blabla bla blabla bla blabla bla bla
+            </div> 
         </div>
     </div>
-</div>
 
-<div class="content-box">
-    <div class="content-pic">
-        <img src="monkey.jpg" alt="monkey">
-        <div class="content-title">
-        bla bla bla
+
+    <div class="content-box">
+        <div class="content-pic">
+            <img src="monkey.jpg" alt="monkey">
+                <div class="content-title">
+                bla bla bla
+                </div>
         </div>
     </div>
-</div>
 
-<div class="content-box">
-    <div class="content-pic">
-        <img src="monkey.jpg" alt="monkey">
-        <div class="content-title">
-        bla bla bla
+    <div class="content-box">
+        <div class="content-pic">
+            <img src="monkey.jpg" alt="monkey">
+            <div class="content-title">
+            bla bla bla
+            </div>
         </div>
     </div>
-</div>
 
-<div class="content-box">
-    <div class="content-pic">
-        <img src="monkey.jpg" alt="monkey">
-        <div class="content-title">
-        bla bla bla
+    <div class="content-box">
+        <div class="content-pic">
+            <img src="monkey.jpg" alt="monkey">
+            <div class="content-title">
+            bla bla bla
+            </div>
         </div>
     </div>
-</div>
 
-<div class="content-box">
-    <div class="content-pic">
-        <img src="monkey.jpg" alt="monkey">
-        <div class="content-title">
-        bla bla bla
+    <div class="content-box">
+        <div class="content-pic">
+            <img src="monkey.jpg" alt="monkey">
+            <div class="content-title">
+            bla bla bla
+            </div>
         </div>
     </div>
+
 </div>
 
 
