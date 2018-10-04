@@ -1,103 +1,63 @@
 <?php 
 include 'header.php';
 
-// $sql = "select * from posts ORDER BY laikas desc";
-// $result = $con->query($sql);
-// 
-// while ($post = $result->fetch_assoc()){
-   
-//     $userid = $post['user_id'];
-//     $sqlUsers = "select * from users where id='$userid'";
-//     $resultUsers = $con->query($sqlUsers);
-//     $postUsers = $resultUsers->fetch_assoc();
-//     // var_dump($postUsers);
-
-//     var_dump($post['id']);
-   
-//     if(isset($_SESSION['id'])){     
-//             echo "<div class='post-box'>";
-//                 echo 'Autorius - ' . $postUsers['name'] . '&nbsp' . $postUsers['lastname'] . '<br>';
-//                 echo '<strong>' . $post['title'] . '</strong>' . '<br>';
-//                 /** IDETI NUOTRAUKAS */
-//                 echo substr($post['content'], 0, 80 ) . '...' . '<br>' . '<br>';        
-//                 if(strlen($post['content']) > 79){
-//                     echo '<a href="post.php?id='.$post['id'].'">READ MORE</a> &nbsp&nbsp&nbsp';
-//                 }     
-//                 if($_SESSION['id'] == $userid){   
-//                     echo '<a href="post_edit.php?id='.$post['id'].'">EDIT</a> &nbsp&nbsp&nbsp';
-//                     echo '<a href="post_delete.php?id='.$post['id'].'">DELETE POST</a> &nbsp&nbsp&nbsp';
-//                 }   
-//                 echo '<a href="comment_new.php?id='.$post['id'].'">Komentuoti</a> &nbsp&nbsp&nbsp';
-//                 echo '<a href="post.php?id='.$post['id'].'">Komentarai</a>';       
-//             echo "</div>";   
-//     } else {
-//         echo "<div class='post-box'>";
-//             echo 'Autorius - ' . $postUsers['name'] . '&nbsp' . $postUsers['lastname'] . '<br>';
-//             echo '<strong>' . $post['title'] . '</strong>' . '<br>';
-//             /** IDETI NUOTRAUKAS */
-//             echo substr($post['content'], 0, 80 ) . '...' . '<br>' . '<br>';        
-//             if(strlen($post['content']) > 79){
-//                 echo '<a href="post.php?id='.$post['id'].'">READ MORE</a> &nbsp&nbsp&nbsp';
-//             }        
-//             echo '<a href="post.php?id='.$post['id'].'">Komentarai</a>';       
-//         echo "</div>";
-//     }
-// }
-
+$sql = "select * from posts ORDER BY laikas desc limit 6";
+$result = $con->query($sql);
 ?>
-
-
 <div class="content">
-
-    <div class="content-box">
-        <div class="content-pic">
-            <img src="monkey.jpg" alt="monkey">
+    <?php while ($post = $result->fetch_assoc()){ ?>
+        <?php 
+            $userid = $post['user_id'];
+            $sqlUsers = "select * from users where id='$userid' limit 1";
+            $resultUsers = $con->query($sqlUsers);
+            $postUsers = $resultUsers->fetch_assoc();
+        ?>
+        <div class="content-box">
+            <div class="content-pic">
+                <img src="pol.jpg" alt="monkey">
+            </div>
             <div class="content-title">
-            bla bla blabla bla blabla bla blabla bla blabla bla bla
-            bla bla blabla bla blabla bla blabla bla blabla bla bla
-            </div> 
-        </div>
-    </div>
-
-
-    <div class="content-box">
-        <div class="content-pic">
-            <img src="monkey.jpg" alt="monkey">
-                <div class="content-title">
-                bla bla bla
-                </div>
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="content-pic">
-            <img src="monkey.jpg" alt="monkey">
-            <div class="content-title">
-            bla bla bla
+                <?php echo $post['title']; ?>
+            </div>
+            <?php if(isset($_SESSION['id'])){ ?>
+                <?php
+                    if($_SESSION['id'] == $userid){   
+                        echo '<a href="post_edit.php?id='.$post['id'].'">EDIT</a> &nbsp&nbsp&nbsp';
+                        echo '<a href="post_delete.php?id='.$post['id'].'">DELETE POST</a> &nbsp&nbsp&nbsp';
+                    }   
+                ?>
+                <a href="comment_new.php?id='.$post['id'].'">Komentuoti</a> &nbsp&nbsp&nbsp
+            <?php } ?>
+            <div class="content-link">
+                <a href="post.php?id=<?php echo $post['id']; ?>">READ MORE</a>
+                <a href="post.php?id=<?php echo $post['id']; ?>">Komentarai</a>
             </div>
         </div>
-    </div>
-
-    <div class="content-box">
-        <div class="content-pic">
-            <img src="monkey.jpg" alt="monkey">
-            <div class="content-title">
-            bla bla bla
-            </div>
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="content-pic">
-            <img src="monkey.jpg" alt="monkey">
-            <div class="content-title">
-            bla bla bla
-            </div>
-        </div>
-    </div>
-
+    <?php } ?>
 </div>
 
 
 
-<!-- <?php include 'footer.php' ?> -->
+
+
+
+
+<!-- <div class="content">
+fffff
+    <div class="content-box">
+        <div class="content-pic">
+            <img src="pol.jpg" alt="monkey">
+        </div>
+        <div class="content-title">
+
+        </div> 
+    </div>
+eeeeee
+
+</div> -->
+
+
+
+<?php 
+// include 'footer.php'
+?>

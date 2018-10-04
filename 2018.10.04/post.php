@@ -66,4 +66,4 @@ if (!empty($_GET && !empty($_GET['id']))){
 }
 ?>
 
-<input type="button" value="Back" onclick="location.href='feed.php'" />
+<input type="button" value="Back" onclick="location.href='index.php'" />

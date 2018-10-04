@@ -46,7 +46,7 @@ include 'header.php';
                 <div class="signin">
                 <input type="submit" class="button3" name="button3" value="Log in">
                 </div>
-</form>                
+                </form>                
             </div>   
         </div>
 

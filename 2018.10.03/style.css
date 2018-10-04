@@ -367,3 +367,7 @@ li a:hover {
     background-color: #FFFFFF;
     max-width: 50%;
 }
+
+.content-title {
+    max-width: 100%;
+}

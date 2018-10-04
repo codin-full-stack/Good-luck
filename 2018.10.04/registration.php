@@ -92,6 +92,10 @@
             <label for="lytis" class="radio">
                 <input type="radio" name="lytis" value="kita">Kita
             </label>
+
+            <label>Profile picture:
+                <input type="file" name="image" />
+            </label>
             
             <br>          
             
@@ -122,9 +126,12 @@ if (!empty ($_POST)) {
         $gender = $_POST['lytis'];
         $city = $_POST['miestai'];
 
+        $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+        $image_name = addslashes($_FILES['image']['name']);
 
-        $sql = "insert into users (name, lastname, email, password, amzius, city, gender )
-        values ('$name', '$lastname', '$email', '$password', '$amzius', '$city', '$gender' )";
+
+        $sql = "insert into users (name, lastname, email, password, amzius, city, gender, profile-pic )
+        values ('$name', '$lastname', '$email', '$password', '$amzius', '$city', '$gender', '$image' )";
 
         var_dump($sql);
 

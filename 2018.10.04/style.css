@@ -342,28 +342,65 @@ li a:hover {
 .content-title {
     font: bold;
 } */
+
+
 /*________________________________*/
 
 .content {
-
-    display: flex; /* or inline-flex */   
-    width: 75%;
-    /* background-color: #e1e1e1; */
+    display: flex;   
+    /* width: 75%; */
+    width: 1170px;
+    background-color: #e1e1e1;
     margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
     flex-wrap: wrap;
-    justify-content:space-around;    
+    justify-content:space-around;
+    padding: 45px;    
 }      
 
 .content-box {
-    max-width: 35%;
-    margin-top: 45px;
-}
-.content-pic{
-    max-width: 100%;
-}
-.content-box:nth-child(2n+2){
-    background-color: #FFFFFF;
     max-width: 50%;
+    margin-top: 45px;
+    height: 415px;
+    background-color: #FFFFFF;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
 }
+
+.content-box img {
+    max-width: 100%;
+    transition: all 0.3s;
+}
+
+.content-box:hover img {
+    transform: scale(1.1);
+}
+
+.content-box:nth-child(2),
+.content-box:nth-child(3),
+.content-box:nth-child(4),
+.content-box:nth-child(6) {
+    max-width: 270px;
+}
+
+.content-box:nth-child(1),
+.content-box:nth-child(5) {
+    width: 570px;
+}
+
+img {
+    max-width: 100%;
+    /* height: 80%; */
+    width: auto;
+}
+
+.content-title {
+    font-family: 'Satisfy', cursive;
+    font-size: xx-large;
+}
+
+/* * {
+    box-sizing: border-box;
+} */

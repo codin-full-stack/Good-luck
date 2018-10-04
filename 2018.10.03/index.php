@@ -53,8 +53,8 @@ include 'header.php';
         <div class="content-pic">
             <img src="monkey.jpg" alt="monkey">
             <div class="content-title">
-            bla bla blabla bla blabla bla blabla bla blabla bla bla
-            bla bla blabla bla blabla bla blabla bla blabla bla bla
+                bla bla blabla bla blabla bla blabla bla blabla bla bla
+                bla bla blabla bla blabla bla blabla bla blabla bla bla
             </div> 
         </div>
     </div>
@@ -64,7 +64,7 @@ include 'header.php';
         <div class="content-pic">
             <img src="monkey.jpg" alt="monkey">
                 <div class="content-title">
-                bla bla bla
+                    bla bla bla
                 </div>
         </div>
     </div>
@@ -73,7 +73,7 @@ include 'header.php';
         <div class="content-pic">
             <img src="monkey.jpg" alt="monkey">
             <div class="content-title">
-            bla bla bla
+                bla bla bla
             </div>
         </div>
     </div>
@@ -82,7 +82,7 @@ include 'header.php';
         <div class="content-pic">
             <img src="monkey.jpg" alt="monkey">
             <div class="content-title">
-            bla bla bla
+                bla bla bla
             </div>
         </div>
     </div>
@@ -91,7 +91,16 @@ include 'header.php';
         <div class="content-pic">
             <img src="monkey.jpg" alt="monkey">
             <div class="content-title">
-            bla bla bla
+                bla bla bla
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-box">
+        <div class="content-pic">
+            <img src="monkey.jpg" alt="monkey">
+            <div class="content-title">
+                bla bla bla
             </div>
         </div>
     </div>
