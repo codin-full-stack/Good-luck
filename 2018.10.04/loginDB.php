@@ -73,8 +73,9 @@ if (!empty($_POST)){
         
         $_SESSION['id'] = $user['id'];
 
-        // header('Location: userInfoDB.php');
+        header('Location: userInfoDB.php');
         exit;
+       
     } else {
         echo 'Blogas slaptazodis';
     }

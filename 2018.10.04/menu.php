@@ -8,7 +8,7 @@
             <div class="dropDown">
                 <button class="dropbtn">User Profile</button>
                 <div class="dropDown-content">
-                    <a href="#">Profile Info</a>
+                    <a href="userInfoDB.php">Profile Info</a>
                     <a href="#">My Posts</a>                      
                 </div>
             </div> 

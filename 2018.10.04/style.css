@@ -144,7 +144,6 @@ label {
     background-color: #FFFFFF;
     position: absolute;
     width: 333px;
-    position:absolute;
     left:0;
     right:0;
     top:0;
@@ -325,26 +324,6 @@ li a:hover {
 
 /** VISU POSTU ATVAIZDAVIMO STILIUS */
 
-/* .content {
-    margin-top: 150px;
-    background-color: #cccccc;
-    max-width: 70%;
-}
-
-.content-box {
-    display: flex;
-    background-color: #FFFFFF;
-    margin-top: 50px;
-    display: inline-block;
-    margin-left: 30px;
-}
-
-.content-title {
-    font: bold;
-} */
-
-
-/*________________________________*/
 
 .content {
     display: flex;   
@@ -404,3 +383,45 @@ img {
 /* * {
     box-sizing: border-box;
 } */
+
+/** ____ USER INFO _____ */
+
+.profileInfo {
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 333px;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height: 430px;
+    overflow:auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/** POST.PHP Postu atvaizdavimas */
+
+.content-post{
+    display: flex;   
+    /* width: 75%; */
+    width: 1170px;
+    background-color: #e1e1e1;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 45px;    
+}
+
+.content-post-box {
+    max-width: 50%;
+    margin-top: 45px;
+    height: 415px;
+    background-color: #FFFFFF;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}

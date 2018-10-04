@@ -36,28 +36,6 @@ $result = $con->query($sql);
     <?php } ?>
 </div>
 
-
-
-
-
-
-
-<!-- <div class="content">
-fffff
-    <div class="content-box">
-        <div class="content-pic">
-            <img src="pol.jpg" alt="monkey">
-        </div>
-        <div class="content-title">
-
-        </div> 
-    </div>
-eeeeee
-
-</div> -->
-
-
-
 <?php 
 // include 'footer.php'
 ?>

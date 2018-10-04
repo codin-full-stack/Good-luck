@@ -2,8 +2,8 @@
 include 'header.php';
 ?>
 
+<div class="profileInfo">
 <?php
-
 if (isset($_SESSION['id'])){
     $sql = "select * from users where id='".$_SESSION['id']."' ";
     
@@ -15,7 +15,11 @@ if (isset($_SESSION['id'])){
     // var_dump($user);
 
     if(!empty($user)){
-        unset($user['password']);
+        unset($user['password']);?>
+        <img src="<?= $user['picture'] ?>"> <br>
+        <?php
+        unset($user['picture']);
+
         foreach ($user as $key => $value) {
             echo $key . ': ' . $value . '<br>';
         }    
@@ -30,8 +34,8 @@ if (isset($_SESSION['id'])){
     echo 'Norint perziureti informacija, butina prisijungti!';
 }
 ?>
-
+</div>
 
 <?php
-include 'footer.php';
+// include 'footer.php';
 ?>
