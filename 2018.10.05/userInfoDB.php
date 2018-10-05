@@ -16,7 +16,7 @@ if (isset($_SESSION['id'])){
 
     if(!empty($user)){
         unset($user['password']);?>
-        <img src="<?= $user['picture']?>"  height="100" width="100"> <br>
+        <img src="<?= $user['picture']?>"  height="250" width="332"> <br>
         <?php
         unset($user['picture']);
 
