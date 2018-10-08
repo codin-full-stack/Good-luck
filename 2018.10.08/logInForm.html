@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Log In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>    
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li class="navbarHome">
+                <a class="" href="index.html">Home</a>
+            </li>
+
+            <li class="navbarProfile">
+                <div class="dropDown">
+                    <button class="dropbtn">User Profile</button>
+                    <div class="dropDown-content">
+                        <a href="#">Profile Info</a>
+                        <a href="#">My Posts</a>                      
+                    </div>
+                </div> 
+            </li>
+
+            <li class="postSearch">
+                <a href="">Straipsniu paieska</a>
+            </li>
+    
+            <li class="navbarRegister">
+                <a href="registrationForm.html">Register</a>
+            </li>
+
+            <li class="navbarLogin">
+                <a href="loginDB.php">Log In</a>
+            </li>
+
+            <li class="navbarLogout">
+                <a href="">Log Out</a>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="form"> 
+        <!-- VISA FORMA -->
+        <div class="topbox">
+            <div class="login">
+                <a href="loginDB.php" class="button1">Log in</a>
+            </div>
+
+            <div class="register">
+                <a href="registrationForm.html" class="button2">Register</a>
+            </div>                
+        </div>
+
+        
+        <div class="infobox">
+            <!-- langas su visais laukeliais ir mygtukais -->
+
+            <div class="email">
+                <!-- emailo blokas -->
+                <form action="" method="POST">                    
+                        <label for="email">
+                            EMAIL
+                        </label>
+                        <br>
+                        <input class="field" type="text" id="email" name="email" >                                
+                </form>
+            </div>
+
+            <div class="pass">
+                <!-- slaptazodzio blokas -->
+                <form action="" method="POST">
+                    <label for="pass">
+                        PASSWORD
+                    </label>
+                    <br>
+                    <input class="field" type="password" id="loginpass" name="loginpass">
+                </form>
+            </div>
+
+            <div class="bottom">
+                <!-- Apatiniai mygtukai -->
+                <div class="forgot">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div class="signin">
+                    <button class="button3">Sign in</button>
+                </div>
+            </div>    
+        </div>
+
+    </div>
+        
+        
+</body>
+</html>
