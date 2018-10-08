@@ -12,7 +12,7 @@ include 'header.php';
             </div>
 
             <div class="register">
-                <a href="registrationForm.html" class="button2">Register</a>
+                <a href="registration.php" class="button2">Register</a>
             </div>                
         </div>
 

@@ -157,8 +157,7 @@ label {
 
 .regbox {
     max-width: 100%;
-    margin: 0 25px;
-    padding-top: 75px;
+    margin: 0 20px;
 }
 
 .regtopbox {
@@ -346,8 +345,7 @@ li a:hover {
 .content-box {
     margin-top: 45px;
     height: 415px;
-    padding: 5px;
-    margin-right: 5px;
+    padding: 6px;
     border-style: solid;
     border-color: chocolate;
     overflow: hidden;
@@ -441,7 +439,7 @@ img {
     height: 100px; */
 }
 
-/** MOBILE PHONE MENU */
+/** MOBILE/TABLETS DISPLAY */
 
 @media (max-width:1024px){
     .content {
@@ -451,15 +449,96 @@ img {
     .content-box {
         width: 100%
     }
-
+    .content-box:nth-child(1),
     .content-box:nth-child(2),
     .content-box:nth-child(3),
     .content-box:nth-child(4),
+    .content-box:nth-child(5),
     .content-box:nth-child(6) {
         width: 100%;
         max-width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 }
 
-@media (max-width:)
+
+/** 1440px DISPLAY */
+
+@media (max-width:1440px){
+    .content {
+        width: 100%;
+    }
+
+    .content-box {
+        width: 100%
+    }
+    .content-box:nth-child(1),
+    .content-box:nth-child(2),
+    .content-box:nth-child(3),
+    .content-box:nth-child(4),
+    .content-box:nth-child(5),
+    .content-box:nth-child(6) {
+        width: 48%;
+        max-width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media (max-width:768px){
+    .content {
+        width: 100%;
+    }
+
+    .content-box {
+        width: 100%
+    }
+    .content-box:nth-child(1),
+    .content-box:nth-child(2),
+    .content-box:nth-child(3),
+    .content-box:nth-child(4),
+    .content-box:nth-child(5),
+    .content-box:nth-child(6) {
+        width: 95%;
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+/** USERIO VISU POSTU ATVAIZDAVIMAS */
+
+.userPosts{
+    display: flex;
+    width: 90%;
+    background-color: #5d5d5d;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.user-content-title{
+    font-family: 'Satisfy', cursive;
+    font-size: inherit;
+    color: #000000;
+    position: absolute;
+    /* bottom: 5px; */
+}
+
+.user-post-box{
+    position: relative;
+    width: 95%;
+    height: 220px;
+    background-color: white;
+    margin-bottom: 35px;
+    margin-top: 5px;
+}
+
+.user-post-pic {
+    width: 390px;
+}

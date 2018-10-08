@@ -3,8 +3,17 @@
 ?>
 
 <div class="regform">
+    <div class="regtopbox">
+        <div class="login">
+            <a href="loginDB.php" class="button11">Log in</a>
+        </div>
+
+        <div class="register">
+            <a href="registration.php" class="button21">Register</a>
+        </div>                
+    </div>
     <div class="regbox">
-        <h1 class="registracija"> Registracija </h1>
+        <!-- <h1 class="registracija"> Registracija </h1> -->
         <form action="" method="POST" enctype="multipart/form-data">
             
             <?php // var_dump($_POST)?>
