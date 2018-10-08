@@ -451,6 +451,15 @@ img {
     .content-box {
         width: 100%
     }
+
+    .content-box:nth-child(2),
+    .content-box:nth-child(3),
+    .content-box:nth-child(4),
+    .content-box:nth-child(6) {
+        width: 100%;
+        max-width: 100%;
+    }
+
 }
 
 @media (max-width:)
