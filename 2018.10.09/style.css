@@ -336,7 +336,7 @@ li a:hover {
 
 .content {
     display: flex;   
-    width: 75%;
+    width: 70%;
     background-color: #e1e1e1;
     margin-top: 40px;
     margin-right: auto;
@@ -550,9 +550,11 @@ img {
 .user-content-title{
     font-size: inherit;
     color: #000000;
-    position: absolute;
     top: 5px;
     max-width: 50%;
+    max-height: 40%;
+    height: 40%;
+    background-color: darkgray;
 }
 
 .user-post-box{
@@ -566,16 +568,16 @@ img {
 }
 
 .user-post-pic {
-    width: 390px;
-    max-width: 100%;
+    width: 30%;
+    max-width: 30%;
 }
 
 .user-post-content {
     font-size: inherit;
     color: #000000;
-    /* position: absolute; */
     bottom: 5px;
     max-width: 50%;
+    background-color: darkseagreen;
 }
 
 .post-buttons {
