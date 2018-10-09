@@ -48,7 +48,7 @@ a.button1 {
     display: inline-block;
     font-size: 14px;
     cursor: pointer;
-    width: 40%;
+    width: 100%;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
 }
@@ -62,7 +62,7 @@ a.button2 {
     display: inline-block;
     font-size: 14px;
     cursor: pointer;
-    width: 40%;
+    width: 100%;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
 }
@@ -177,7 +177,7 @@ a.button11 {
     display: inline-block;
     font-size: 14px;
     cursor: pointer;
-    width: 40%;
+    width: 100%;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
 }
@@ -348,22 +348,12 @@ li a:hover {
 .content-box {
     margin-top: 45px;
     height: 415px;
-    padding: 6px;
     border-style: solid;
     border-color: chocolate;
     overflow: hidden;
     position: relative;
     background-position: center;
 }
-
-.content-box img {
-    max-width: 100%;
-    transition: all 0.3s;
-}
-
-/* .content-box:hover img {
-    transform: scale(1.1);
-} */
 
 .content-box:nth-child(2),
 .content-box:nth-child(3),
@@ -547,7 +537,7 @@ img {
 
 /** USERIO VISU POSTU ATVAIZDAVIMAS */
 
-.userPosts{
+.userPosts {
     display: flex;
     width: 90%;
     background-color: #5d5d5d;
@@ -562,6 +552,7 @@ img {
     color: #000000;
     position: absolute;
     top: 5px;
+    max-width: 50%;
 }
 
 .user-post-box{
@@ -576,12 +567,21 @@ img {
 
 .user-post-pic {
     width: 390px;
+    max-width: 100%;
 }
 
 .user-post-content {
     font-size: inherit;
     color: #000000;
-    position: absolute;
+    /* position: absolute; */
     bottom: 5px;
     max-width: 50%;
+}
+
+.post-buttons {
+    max-width: 20%;
+    max-height: 100%;
+    width: 20%;
+    background-color: cadetblue;
+    margin-left: auto;
 }

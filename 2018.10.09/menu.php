@@ -6,11 +6,13 @@
 
         <li class="navbarProfile">
             <div class="dropDown">
-                <button class="dropbtn">User Profile</button>
-                <div class="dropDown-content">
-                    <a href="userInfoDB.php">Profile Info</a>
-                    <a href="userPosts.php">My Posts</a>                      
-                </div>
+                <?php if(isset($_SESSION['id'])) { ?>
+                    <button class="dropbtn">User Profile</button>
+                    <div class="dropDown-content">
+                        <a href="userInfoDB.php">Profile Info</a>
+                        <a href="userPosts.php">My Posts</a>                      
+                    </div>
+                <?php } ?>
             </div> 
         </li>
 
@@ -19,13 +21,16 @@
         </li>
 
         <li class="postNew">
-            <a href="post_new.php">Straipsniu rasymas</a>
+            <?php if(isset($_SESSION['id'])){ ?>
+                <a href="post_new.php">Straipsniu rasymas</a>
+            <?php } ?>
         </li>
 
 
         <li class="navbarRegister">
             <a href="registration.php">Register</a>
         </li>
+
         <li class="loggedin">
             <?php
                     if(isset($_SESSION['id'])){
@@ -33,14 +38,15 @@
                 }
             ?>
         </li>
+
         <li class="navbarLogin">
             <a href="loginDB.php">Log In</a>
         </li>
 
-        <li class="navbarLogout">
-            <?php if(isset($_SESSION)){ ?>
+        <?php if(isset($_SESSION['id'])){ ?>
+            <li class="navbarLogout">
                 <a href="logout.php">Log Out</a>
-            <?php } ?>
-        </li>
+            </li>
+        <?php } ?>
     </ul>
 </div>

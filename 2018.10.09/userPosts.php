@@ -30,6 +30,12 @@ include 'header.php';
                 <div class="user-post-content">
                     <?php echo substr($posts['content'], 0, 220); ?>
                 </div>
+                <div class="post-buttons">
+                    <?php
+                    echo '<a href="post_edit.php?id='.$posts['id'].'">EDIT POST</a> &nbsp&nbsp&nbsp';
+                    echo '<a href="post_delete.php?id='.$posts['id'].'">DELETE POST</a> &nbsp&nbsp&nbsp';
+                    ?>
+                </div>
             </div>
         <?php
         }
