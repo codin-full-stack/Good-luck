@@ -1,11 +1,6 @@
 <?php 
 include 'header.php';
-?>
 
-<!-- <script>
-setTimeout(() => window(myFunction()), 1500);
-</script> -->
-<?php
 $sql = "select * from posts ORDER BY laikas desc limit 6";
 $result = $con->query($sql);
 ?>

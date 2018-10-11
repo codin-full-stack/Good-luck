@@ -36,7 +36,7 @@
         <li class="navbarusers">
             <a href="allUsers.php">Visi vartotojai</a>
         </li>
-        
+
         <li class="loggedin">
             <?php
                     if(isset($_SESSION['id'])){

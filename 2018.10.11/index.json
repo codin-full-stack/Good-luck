@@ -1,0 +1,84 @@
+{
+    "menu":{
+        "header":"",
+        "items":[
+            {
+                "id":"index.php",
+                "label":"Home"
+            },
+            {
+                "id":"session.php",
+                "label":"Registracija"
+            },
+            null,
+            {
+                "id":"scan.php",
+                "label":"Visi vartotojai"
+            },
+            {
+                "id":"paieska.php",
+                "label":"Vartotoju paieska"
+            },
+            {
+                "id":"registration.php",
+                "label":"Registracija su slaptazodziu"
+            },
+            null,
+            {
+                "id":"Login.php",
+                "label":"Log In"
+            },
+            {
+                "id":"account.php",
+                "label":"Vartotojo informacija"
+            },
+            {
+                "id":"searchformDB.php",
+                "label":"Paieska duomenu bazeje"
+            },
+            null,
+            {
+                "id":"LoginDB.php",
+                "label":"Log in Database"
+            },
+            {
+                "id":"userInfoDB.php",
+                "label":"Vartotojo profilis"
+            },
+            {
+                "id":"feed.php",
+                "label":"Postai"
+            },
+            {
+                "id":"post_new.php",
+                "label":"Rasyti nauja posta"
+            },
+            {
+                "id":"searchPostsForm.php",
+                "label":"Straipsniu paieska"
+            },
+            {
+                "id":"ViewSVG",
+                "label":"View SVG"
+            },
+            {
+                "id":"ViewSource",
+                "label":"View Source"
+            },
+            {
+                "id":"SaveAs",
+                "label":"Save As"
+            },
+            null,
+            {
+                "id":"logout.php",
+                "label":"LOG OUT"
+
+            },
+            {
+                "id":"About",
+                "label":"About Adobe CVG Viewer..."
+            }
+        ]
+    }
+}
