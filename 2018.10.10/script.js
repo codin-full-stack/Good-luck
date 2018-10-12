@@ -20,7 +20,7 @@ var lefttime = kaleduData - today;
 var leftDay = lefttime / dayMiliseconds;
 
 var days =  Math.floor(leftDay);
-var hours = Math.floor(leftDay % hourMiliseconds);
+var hours = Math.floor(leftDay % minuteMiliseconds);
 var minutes = Math.floor((lefttime / minuteMiliseconds));
 var seconds = Math.floor(lefttime / secondsMiliseconds);
 
