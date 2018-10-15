@@ -42,13 +42,13 @@
         </li>
 
         <li class="blue">
-        <button onclick="showBlue()">Blue</button>
+            <button>Blue</button>
         </li>
         <li class="green">
-        <button onclick="showGreen()">Green</button>
+            <button>Green</button>
         </li>
         <li class="red">
-        <button onclick="showRed()">Red</button>
+            <button>Red</button>
         </li>
 
         <li class="loggedin">

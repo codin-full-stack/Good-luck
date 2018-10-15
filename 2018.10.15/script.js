@@ -86,14 +86,18 @@ function showGreen() {
 
 
 
-var red = document.querySelector(".navbarlist");
+var red = document.querySelector(".navbarlist .red button");
+var navbar = document.querySelector(".navbar");
 // function showRed() {
 //     alert("you picked Red");
 // }
 console.log(red);
-function showRed(red){
-    document.red.style.backgroundColor = "red";
-}
-red.addEventListener("onclick", function showRed(red){document.red.style.backgroundColor = "red";} );
+
+red.addEventListener('click', function (event){
+
+    console.log(event);
+
+    navbar.style.backgroundColor = "red";
+});
 
 
