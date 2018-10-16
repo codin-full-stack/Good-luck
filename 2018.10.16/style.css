@@ -250,6 +250,7 @@ a.button21 {
     padding-top: 14px;
     padding-left: 5px;
     padding-right: 5px;
+    background-color: goldenrod;
 }
 
 .navbarLogin, navbarLogout {
@@ -467,13 +468,13 @@ img {
         display: none;
     }
 }
+.menu-btn {
+    display: none;
+}
 
 /** 1440px DISPLAY */
 
 @media (max-width:1440px){
-    .menu-btn {
-        display: none;
-    }
 
     .content {
         width: 100%;

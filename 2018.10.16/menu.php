@@ -41,7 +41,7 @@
         </li>
 
         <li class="leftTime">
-            Iki kaledu liko:
+            
         </li>
 
 

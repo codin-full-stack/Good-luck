@@ -34,9 +34,8 @@ var seconds = Math.floor(lefttime / secondsMiliseconds);
 
 var nav = document.querySelector(".leftTime");
 // nav.innerHTML = 'Liko: ' + days + ' Dienos';
-nav.style.backgroundColor = "green";
 // nav.style.color = 'pink';
-nav.innerHTML += days + " Dienos";
+nav.innerHTML += "Iki kaledu liko: " + days + " Dienos";
 
 
 /** LOOP POSTU ATVAIZDAVIME */
@@ -107,6 +106,8 @@ function myFunction() {
     navbar.style.backgroundColor = color;
 }
 
+
+/** RESPONSIVE MENU BUTTON */
 var btn = document.querySelector(".navbar .menu-btn button");
 console.log(btn);
 var navbarlist = document.querySelector(".navbar .navbarlist");
