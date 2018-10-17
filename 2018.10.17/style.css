@@ -1,0 +1,753 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #4AA272;
+}
+
+a {
+    text-decoration: none;
+}
+    
+
+.form {
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 333px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height: 300px;
+    overflow:auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.topbox {
+    display: flex;
+    max-width: 100%;
+}
+
+.login {
+    width: 50%;
+}
+
+.register {
+    width: 50%;
+}
+
+a.button1 {
+    background-color: #FFFFFF;
+    border: none;
+    color: #000000;
+    padding: 12px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a.button2 {
+    background-color: #E1E1E1;
+    border: none;
+    color: white;
+    padding: 12px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.infobox{
+    width: 100%;
+    padding-top: 35px;
+}
+
+.email{
+    max-width: 100%;
+    margin: 20px;
+}
+
+.pass{
+    max-width: 100%;
+    margin: 20px;
+}
+
+.field {
+    background: transparent;
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom-color: #ECECEC;
+    font-weight: 200;
+    padding-left: 0;
+    width: 100%;
+}
+
+.bottom {
+    display: flex;
+    max-width: 100%;
+    margin: 40px 10px 10px 10px;
+}
+
+.forgot {
+    margin-top: 13px;
+    margin-left: 14px;
+}
+
+.signin {
+    margin-left: 65px;
+}
+
+.button3 {
+    background-color: #4AA272;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 110px;
+    height: 45px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.button3:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+/** REGISTRACIJOS LAUKELIO STILIUS */
+
+.registracija {
+    text-align: center;
+    margin-top: -55px;
+}
+
+.regform {
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 333px;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height: 430px;
+    overflow:auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.regbox {
+    max-width: 100%;
+    margin: 0 20px;
+}
+
+.regtopbox {
+    display: flex;
+    max-width: 100%;
+}
+
+a.button11 {
+    background-color: #E1E1E1;
+    border: none;
+    color: #FFFFFF;
+    padding: 12px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a.button21 {
+    background-color: #FFFFFF;
+    border: none;
+    color: #000000;
+    padding: 12px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    width: 40%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button4 {
+    margin-top: 0px;
+    margin-left: 175px;
+}
+
+.button4 {
+    background-color: #4AA272;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 110px;
+    height: 45px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.button4:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/** NAVIGATION BAR STYLE (MENIU) */
+
+.navbar {
+    display: flex;
+    max-width: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    background-color: #000000;
+}
+
+/* @media screen and (max-width: 740px) {
+    div.navbar {
+      display: none;
+    }
+} */
+
+.loggedin {
+    color: #FFFFFF;
+    padding-top: 14px;
+    display: flex;
+    padding-left: 8px;
+}
+
+.leftTime {
+    color: #FFFFFF;
+    padding-top: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: goldenrod;
+}
+
+.navbarLogin, navbarLogout {
+    margin-left: auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/** NUSILEIDZIANTIS SUB-MENIU */
+
+.dropDown-content {
+    position: static;
+    max-height: 0;
+    height: 0;
+    transition: 0.6s;
+    overflow: hidden;
+}
+
+.dropDown-content.subMenu-active {
+    position: static;
+    max-height: 80px;
+    height: 80px;
+    transition: 0.6s;
+    overflow: hidden;
+}
+button {
+    background:none;
+    color:inherit;
+    border:none; 
+    padding:0;
+    font: inherit;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/** VISU POSTU ATVAIZDAVIMO STILIUS */
+
+
+.content {
+    display: flex;   
+    width: 70%;
+    background-color: #e1e1e1;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}      
+
+.content-box {
+    margin-top: 45px;
+    height: 415px;
+    border-style: solid;
+    border-color: chocolate;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+}
+
+.content-box:nth-child(2),
+.content-box:nth-child(3),
+.content-box:nth-child(4),
+.content-box:nth-child(6) {
+    width: 260px;
+    max-width: 100%;
+}
+
+.content-box:nth-child(1),
+.content-box:nth-child(5) {
+    width: 570px;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    /* height: 80%; */
+    width: auto;
+}
+
+.content-title {
+    font-family: 'Satisfy', cursive;
+    font-size: xx-large;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 5px;
+    background-color: #add8e678;
+}
+
+
+/** ____ USER INFO _____ */
+
+.profileInfo {
+    background-color: #FFFFFF;
+    position: relative;
+    width: 333px;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height: 430px;
+    overflow:auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/** POST.PHP Postu atvaizdavimas */
+
+.content-post{
+    display: flex;   
+    /* width: 75%; */
+    width: 1170px;
+    /* background-color: rgba(225, 225, 225, 0.6); */
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 45px;    
+}
+
+.content-post-box {
+    max-width: 50%;
+    background-color: #FFFFFF;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/** MOBILE/TABLETS DISPLAY */
+
+@media (max-width:1024px){
+    .content {
+        width: 100%;
+    }
+
+    .content-box {
+        width: 100%
+    }
+    .content-box:nth-child(1),
+    .content-box:nth-child(2),
+    .content-box:nth-child(3),
+    .content-box:nth-child(4),
+    .content-box:nth-child(5),
+    .content-box:nth-child(6) {
+        width: 100%;
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.menu-btn {
+    display: none;
+}
+
+/** 1440px DISPLAY */
+
+@media (max-width:1440px){
+
+    .content {
+        width: 100%;
+    }
+
+    .content-box {
+        width: 100%
+    }
+    .content-box:nth-child(1),
+    .content-box:nth-child(2),
+    .content-box:nth-child(3),
+    .content-box:nth-child(4),
+    .content-box:nth-child(5),
+    .content-box:nth-child(6) {
+        width: 48%;
+        max-width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/** 768px DISPLAY */
+
+@media (max-width:768px){
+    /** RESPONSIVE MENU */
+    .menu-btn {
+        display: flex;
+        color: #FFFFFF;       
+    }
+
+    .navbarlist {
+        position: static;
+        max-height: 0;
+        height: 0;
+        transition: 0.6s;
+        overflow: hidden;
+    }
+
+    .navbarlist.menu-active {
+        display: flex;
+        width: 100%;
+        max-height: 850px;
+        height: 850px;
+        transition: 0.6s;
+        background-color: #000000;
+    }
+    
+    .navbarlist li, li a, navbarProfile {
+        width: 100%;
+        text-align: center;
+        padding: 14px 16px;
+    }
+
+    .navbarlist.menu-active li a {
+        transition: 0.7s;
+    }
+    .navbarlist.menu-active li a:hover {
+        background-color: #FFFFFF;
+        color: #000000;
+        transition: 0.7s;
+    }
+
+    .dropDown, .dropbtn {
+        float: none;
+        padding: 0;
+        text-align: center;
+        transition: 2s;
+    }
+
+    .loggedin {
+        margin: 0;
+        display: block;
+        margin: 7px 0px;
+    }
+}
+
+@media (max-width:320px){
+
+    ul {
+        position: static;
+    }
+
+    ul li, li a, navbarProfile {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropDown, .dropbtn {
+        float: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .loggedin {
+        margin: 0;
+        display: block;
+        margin: 7px 0px;
+    }
+
+    /** ____________POSTAI__________ */
+    
+    .content {
+        width: 100%;
+    }
+
+    .content-box {
+        width: 100%
+    }
+
+    .content-box:nth-child(1),
+    .content-box:nth-child(2),
+    .content-box:nth-child(3),
+    .content-box:nth-child(4),
+    .content-box:nth-child(5),
+    .content-box:nth-child(6) {
+        width: 95%;
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width:425px){
+    .content-box {
+        margin-top: 2px;
+    }
+}
+
+
+
+/** USERIO VISU POSTU ATVAIZDAVIMAS */
+
+.userPosts {
+    display: flex;
+    width: 90%;
+    background-color: #5d5d5d;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info-box {
+    width: 50%;
+}
+.user-content-title{
+    font-size: inherit;
+    color: #000000;
+    width: 100%;
+    max-height: 50%;
+    height: 100%;
+    background-color: darkgray;
+}
+
+.user-post-box{
+    position: relative;
+    width: 95%;
+    height: 220px;
+    background-color: white;
+    margin-bottom: 35px;
+    margin-top: 5px;
+    display: inline-flex;
+}
+
+.user-post-pic {
+    width: 100%;
+    max-width: 30%;
+    max-height: 100%;
+    height: 100%;
+}
+
+.user-post-pic img{
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+.user-post-content {
+    font-size: inherit;
+    color: #000000;
+    width: 100%;
+    max-height: 50%;
+    height: 100%;
+    background-color: darkseagreen;
+}
+
+.post-buttons {
+    max-width: 20%;
+    max-height: 100%;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+/** VISU VARTOTOJU LENTELES DIZAINAS */
+
+.vartotoju-lentele {
+    width: 100%;
+    max-width: 50%;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.table-head {
+    background-color: #6D7AE0;
+}
+
+table tbody tr:hover {
+    background-color: #EDECFE;
+    cursor: pointer;
+}
+
+td, th {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid;
+    border-bottom-color: #F2F2F2;
+}
+
+tr {
+    margin: 10px 5px;
+    padding: 20px;
+}
+
+tr a { 
+    color: black;
+} 
+/**______________________________*/
+
+/** RESPONSIVE TABLE */
+@media (max-width: 760px){
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	td:nth-of-type(1):before { content: "Full Name"; }
+	td:nth-of-type(2):before { content: "Age"; }
+	td:nth-of-type(3):before { content: "Job Title"; }
+	td:nth-of-type(4):before { content: "Location"; }
+
+}
+
+@media (max-width: 425px){
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+    }
+    
+    .vartotoju-lentele{
+        width: 100%;
+        max-width: 100%;
+    }
+	
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 100%; 
+		white-space: nowrap;
+	}
+	
+	td:nth-of-type(1):before { content: "Full Name"; }
+	td:nth-of-type(2):before { content: "Age"; }
+	td:nth-of-type(3):before { content: "Job Title"; }
+	td:nth-of-type(4):before { content: "Location"; }
+
+}
+
