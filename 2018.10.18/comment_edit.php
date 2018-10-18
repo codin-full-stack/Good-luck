@@ -1,7 +1,7 @@
 <?php
 include 'header.php';
 
-var_dump($_GET);
+// var_dump($_GET);
 
 if (!empty($_GET && !empty($_GET['id']))){
 
@@ -11,7 +11,7 @@ if (!empty($_GET && !empty($_GET['id']))){
     $resultComment = $con->query($sqlComment);
     $postComment = $resultComment->fetch_assoc();
    
-    var_dump($postComment);
+    // var_dump($postComment);
     
     if($postComment['user_id'] == $_SESSION['id']){
 
@@ -47,7 +47,7 @@ if (!empty($_GET && !empty($_GET['id']))){
 }
 ?>
 
-<input type="button" value="Back" onclick="location.href='feed.php'" />
+<input type="button" value="Back" onclick="location.href='index.php'" />
 
 <?php
 include 'footer.php';
