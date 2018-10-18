@@ -760,11 +760,28 @@ tr a {
 /** SKAICUOTUVO DIZAINAS */
 
 .calculator-box div {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 5px;
 }
 .calculator-box {
-    width: 40%;
+    width: 300px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.top-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.top-box-buttons {
+    display: flex;
+}
+
+.bottom-box {
+    background-color: #515a7d;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -775,8 +792,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 .top-input {
     background-color: transparent;
-    border: 1px solid blue;
+    border: none;
     text-align: right;
+    height: 100%;
+    width: 100%;
+    font-size: -webkit-xxx-large;
+    color: #FFFFFF;
+}
+
+.top-box-numbers {
+    height: 70px;
 }
 
 .bottom-box {
@@ -785,16 +810,44 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .button-item {
     width: 25%;
+    text-align: center;
 }
+
+.button-item:hover {
+    background-color: #5d637b;
+}
+
 .button-item .button {
-    color: red;
+    color: #bfc2cf;
 }
 .button-white .button {
     color: #FFFFFF;
 }
 .button-large {
     width: 50%;
+    text-align: left;
+    padding-left: 54px; /** KODEL NEPASIKEICIA???? */
 }
 .button {
     padding: 10px;
+}
+
+/** VIRSUTINIAI MYGTUKAI */
+.exit {
+    background-color: #ff554e;
+    border-radius: 100%;
+    height: 17px;
+    width: 19px;
+}
+.minimize {
+    background-color: #ffbe2f;
+    border-radius: 100%;
+    height: 17px;
+    width: 19px;
+}
+.expand {
+    background-color: #29ca41;
+    border-radius: 100%;
+    height: 17px;
+    width: 19px;
 }

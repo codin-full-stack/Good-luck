@@ -5,12 +5,21 @@ include 'header.php';
 <div class="calculator-box">
     <div class="top-box">
         <div class="top-box-buttons">
-            <button>
-            </button>
-            <button>
-            </button>
-            <button>
-            </button>
+            <div class="exit">
+                <button>
+                    X
+                </button>
+            </div>
+            <div class="minimize">
+                <button>
+                    _
+                </button>
+            </div>
+            <div class="expand">
+                <button>
+                    <>
+                </button>
+            </div>
         </div>
         <div class="top-box-numbers">
             <input type="number" value="0" class="top-input">
@@ -115,3 +124,8 @@ include 'header.php';
         </div>
     </div>
 </div>
+
+
+<?php
+include 'footer.php';
+?>
