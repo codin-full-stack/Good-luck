@@ -63,7 +63,7 @@ include 'header.php';
             </button>
         </div>
         <div class="button-item">
-            <button class="button" data-value="x">
+            <button class="button" data-value="*">
                 x
             </button>
         </div>

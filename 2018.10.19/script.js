@@ -166,23 +166,38 @@ console.log(btn);
 for (var l = 0; l < btn.length; ++l) {
     btn[l].addEventListener('click', function (e) {
         var clickedItem = e.currentTarget;
+        var btnval = clickedItem.getAttribute("data-value");
+        console.log(btnval);
 
         if (inputField.value == '0'){
             inputField.value = '';
         }
-
-        var btnval = clickedItem.getAttribute("data-value");
-        console.log(btnval);
         var result = inputField.value += btnval;
 
-        if ( btnval == '=' ){
+        if (btnval == "AC"){
+            inputField.value = '0';
+        }   
 
-            eval(result);
+        if ( btnval == '=' ){
+            result = result.slice(0, -1);  
+            var blet = eval(result)
+            inputField.value = blet;
+            console.log(inputField.value);
+        }   
+
+        /** +/- ZENKLAS */
+        if (btnval == '+/-'){
+            var minus = inputField.value.slice(0, -3);
+            // console.log(minus);
+            inputField.value = eval(minus-(minus*2))
+            console.log(inputField.value);
         }
-        
+
+        /**PROCENTAI */
+        if (btnval == '%'){
+            if (btnval == '='){
+    
+            }            
+        }     
     })
 }
-
-// document.addEventListener('click', function (e) {
-//     console.log(e.target);
-// });
