@@ -146,20 +146,6 @@ if(userBtn && userBtnInfo) {
 
 /** SKAICIUOTUVO SCRIPTAS */
 
-// var btn7 = document.querySelector(".bottom-box .button-item:nth-child(5) .button");
-// var inputField = document.querySelector(".calculator-box .top-box-numbers input");
-
-// btn7.addEventListener('click', function (){    
-//     if (inputField.value == '0'){
-//         inputField.value = '';
-//     }
-//     var x = btn7.value;
-//     console.log(x);
-//     inputField.value= inputField.value+x;
-//     console.log(inputField.value);
-// });
-
-/**__________ */
 var inputField = document.querySelector(".calculator-box .top-box-numbers input");
 var btn = document.querySelectorAll(".button");
 console.log(btn);
@@ -201,3 +187,7 @@ for (var l = 0; l < btn.length; ++l) {
         }     
     })
 }
+
+inputField.addEventListener('change', function(){
+    
+})
