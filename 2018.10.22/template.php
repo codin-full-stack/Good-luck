@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">    <!-- <script src="script.js" async></script> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
-<body>
 
+<body>
 <main>
     <section class="first">
         <div class="container-fluid flex">
             <div class="int">
                 <h1 class="section-title">
-                    Stylish portfolio
+                    Stylish Portfolio
                 </h1>
                 <h2>
                     <i>A Free Bootstrap Theme by Start Bootstrap</i>
@@ -219,3 +219,4 @@
 
 
 </main>
+</body>

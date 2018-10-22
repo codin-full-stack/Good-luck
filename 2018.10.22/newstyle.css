@@ -12,21 +12,26 @@
 .flex {
     display: flex;
 }
-.int {
+.first .int {
     margin: 0 auto;
     text-align: center;
     align-self: center;
 }
-.button-blue {
+.first .button-blue {
     align-self: center;
     background-color: #1D809F;
     color: #FFFFFF;
     border-radius: 6px;
 }
-.button {
+.first .button {
     padding: 27px 42px;
     overflow: hidden;
     margin-top: 55px;
+    font-weight: bold;
+    border: none;
+}
+.first .button a {
+    color: white;
     font-weight: bold;
 }
 .section-title {
@@ -45,10 +50,13 @@
     background-color: #FFFFFF;
     padding: 130px 0px;
 }
-.button-white {
+.second .button-white {
     align-self: center;
     background-color: #343A40;
     border-radius: 6px;
+    margin-top: 55px;
+    border: none;
+    padding: 20px;
 }
 .button-white a  {
     color: #FFFFFF;
@@ -57,7 +65,11 @@
 .second h2 {
     font-weight: unset;
 }
-
+.second .int {
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+}
 
 
 
@@ -73,6 +85,12 @@
     color: #ECB807;
     font-size: 20px;
 }
+.third .int {
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+}
+
 .third .int h2{
     color: #FFFFFF;
     font-size: 50px;
@@ -91,8 +109,17 @@
 .art {
     text-align: center;
 }
-
-
+.art h5 {
+    color: #BCD9E2;
+}
+.third .icon {
+    font-size: 45px;
+    color: black;
+    text-align: center;
+}
+.third .icon i {
+    margin-top: 30px;
+}
 
 
 
@@ -102,19 +129,34 @@
     background-image: url('images/bg-callout.jpg');
     display: flex;
     height: 100vh;
+    background-size: cover;
 }
 .fourth .int {
     margin: 255px auto;
     width: 420px;
+    text-align: center;
+    align-self: center;
 }
 .fourth .section-title {
     font-size: 52px;
 }
-.fourth button {
+.fourth .button-blue {
+    align-self: center;
+    background-color: #1D809F;
     color: #FFFFFF;
+    border-radius: 6px;
+}
+.fourth .button {
+    padding: 27px 42px;
+    overflow: hidden;
+    margin-top: 55px;
+    font-weight: bold;
+    border: none;
+}
+.fourth .button a {
+    color: white;
     font-weight: bold;
 }
-
 
 
 
@@ -124,9 +166,11 @@
     background-color: #FFFFFF;
     display: flex;
     height: 100vh;
+    margin: 125px;
 }
 .fifth .int {
-    margin-top: 120px;    
+    text-align: center;
+    align-self: center;   
 }
 .fifth .int h4 {
     font-size: 15px;
@@ -184,10 +228,18 @@
 .sixth h1 {
     color: #FFFFFF;
 }
+.sixth .int {
+    text-align: center;
+    align-self: center;   
+}
+.sixth button {
+    margin-top: 30px;
+}
 .sixth .button-white {
     background-color: #FFFFFF;
     border: none;
     margin-right: 25px;
+    border-radius: 5px;
 }
 .sixth .button-white .btn {
     color: #000000;
@@ -226,6 +278,13 @@
 
 }
 .eight .icon i {
-    color: #000000;
+    color: #ffffff;
     height: 25px;
+}
+.eight .icon {
+    font-size: 45px;
+    text-align: center;
+}
+.eight .icon i {
+    margin-top: 30px;
 }
