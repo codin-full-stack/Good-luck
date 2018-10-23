@@ -307,3 +307,61 @@
 .eight .icon i {
     margin-top: 30px;
 }
+
+
+
+
+/**______SIDE MENU STYLE_____*/
+
+.navbarlist {
+    transition: 0.5s;
+    right: -250px;
+    width: 250px;
+    position: fixed;
+    z-index: 4;
+    opacity: 0;
+}
+
+.navbarlist.menu-active {
+    width: 250px;
+    right: 0;
+    padding-left: 0;
+    max-height: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-color: #1D809F;
+    opacity: 1;
+}
+.first .menu-btn button.menu-active {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    font-size: xx-large;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+.navbarlist button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    font-size: xx-large;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+.navbarlist-btn {
+    top: 0;
+    right: 0;
+    height: 85px;
+    width: 250px;
+    color: white;
+    background-color: #1F7996;
+    text-align: left;
+    padding: 30px 20px;
+    font-size: 18px;
+}
