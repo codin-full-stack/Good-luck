@@ -1,0 +1,309 @@
+/** 2018.10.22 UZDUOTIS TEMPLATE */ 
+
+.first {
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/bg-masthead.jpg');
+    display: flex;
+    background-size: cover;
+}
+.menu-btn button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    font-size: xx-large;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+.container {
+    height: 100%;
+}
+.flex {
+    display: flex;
+}
+.first .int {
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+}
+.first .button-blue {
+    align-self: center;
+    background-color: #1D809F;
+    color: #FFFFFF;
+    border-radius: 6px;
+}
+.first .button {
+    padding: 27px 42px;
+    overflow: hidden;
+    margin-top: 55px;
+    font-weight: bold;
+    border: none;
+}
+.first .button a {
+    color: white;
+    font-weight: bold;
+}
+.section-title {
+    font-weight: bold;
+}
+.first h2 {
+    font-weight: bold;
+}
+.first h1 {
+    font-size: 69px;
+}
+
+
+/**_______SECOND_________*/
+.second {
+    background-color: #FFFFFF;
+    padding: 130px 0px;
+}
+.second .button-white {
+    align-self: center;
+    background-color: #343A40;
+    border-radius: 6px;
+    margin-top: 55px;
+    border: none;
+    padding: 20px;
+}
+.button-white a  {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.second h2 {
+    font-weight: unset;
+}
+.second .int {
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+}
+
+
+
+
+/** ______THIRD________*/
+
+.third {
+    display: flex;
+    background-color: #1D809F;
+    padding: 130px 0px;
+}
+.third h1{
+    color: #ECB807;
+    font-size: 20px;
+}
+.third .int {
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+}
+
+.third .int h2{
+    color: #FFFFFF;
+    font-size: 50px;
+}
+.icon {
+    background-color: #FFFFFF;
+    width: 113px;
+    height: 113px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+.row {
+    color: white;
+    padding-top: 60px;
+}
+.art {
+    text-align: center;
+}
+.art h5 {
+    color: #BCD9E2;
+    font-size: medium;
+}
+.third .icon {
+    font-size: 45px;
+    color: black;
+    text-align: center;
+}
+.third .icon i {
+    margin-top: 30px;
+}
+
+
+
+
+/**___FOURTH____*/
+.fourth {
+    background-image: url('images/bg-callout.jpg');
+    display: flex;
+    height: 100vh;
+    background-size: cover;
+}
+.fourth .int {
+    margin: 255px auto;
+    width: 420px;
+    text-align: center;
+    align-self: center;
+}
+.fourth .section-title {
+    font-size: 52px;
+}
+.fourth .button-blue {
+    align-self: center;
+    background-color: #1D809F;
+    color: #FFFFFF;
+    border-radius: 6px;
+}
+.fourth .button {
+    padding: 27px 42px;
+    overflow: hidden;
+    margin-top: 55px;
+    font-weight: bold;
+    border: none;
+}
+.fourth .button a {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+/**___FIFTH____*/
+.fifth {
+    background-color: #FFFFFF;
+    display: flex;
+    width: 100%;
+    padding: 100px 0;
+}
+.fifth .int {
+    text-align: center;
+    align-self: center;   
+}
+.fifth .int h4 {
+    font-size: 15px;
+    color: #ECB807;
+}
+.fifth .int h1 {
+    font-weight: bold;
+}
+.fifth .row {
+    color: #000000;
+    position: relative;
+}
+.portfolio-item {
+    height: 350px;
+}
+.portfolio-item:nth-child(1){
+    background-image: url('images/portfolio-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.portfolio-item:nth-child(2){
+    background-image: url('images/portfolio-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.portfolio-item:nth-child(3){
+    background-image: url('images/portfolio-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.portfolio-item:nth-child(4){
+    background-image: url('images/portfolio-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.fifth .row .art-fifth {
+    max-width: 390px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 32px;
+    left: 60px;
+}
+
+
+
+
+/**_____ SIXTH______*/
+
+.sixth {
+    background-color: #1D809F;
+    padding: 125px 0;
+    display: flex;
+}
+.sixth h1 {
+    color: #FFFFFF;
+}
+.sixth .int {
+    text-align: center;
+    align-self: center;   
+}
+.sixth button {
+    margin-top: 30px;
+}
+.sixth .button-white {
+    background-color: #FFFFFF;
+    border: none;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+.sixth .button-white .btn {
+    color: #000000;
+}
+.sixth .button-black {
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+}
+.sixth .button-black .btn {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/** ___SEVENTH____*/
+
+.seventh {
+    height: 500px;
+}
+
+.footer-text {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/**___EIGHT____*/
+
+.eight {
+    padding: 80px 0;
+}
+
+.eight .icon {
+    background-color: #1D809F;
+    text-align: center;
+
+}
+.eight .icon i {
+    color: #ffffff;
+    height: 25px;
+}
+.eight .icon {
+    font-size: 45px;
+    text-align: center;
+}
+.eight .icon i {
+    margin-top: 30px;
+}
