@@ -5,14 +5,10 @@ include 'form4.php';
 
 <?php
 
-$sql = "select * from users where id='".$_SESSION['id']."' ";
-    
-// var_dump($sql);
+$sql = "select * from users where id='".$_SESSION['id']."' ";    
 
 $result = $con->query($sql);
 $user = $result->fetch_assoc(); 
-
-// var_dump($user);
 
 if ($user['password'] == md5($_POST['oldpass'])){
     if (md5($_POST['newpass1']) == md5($_POST['newpass2'])){
