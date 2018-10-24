@@ -1,5 +1,69 @@
 <?php
     include 'header.php';
+    /** REGISTRACIJA SU SLAPTAZODZIU DUOMENU BAZEJE */
+
+if(isset($_POST['pateikti'])){
+
+    $targetDir = "pictures/";
+    $targetFile = $targetDir . basename($_FILES['image']['name']);
+    $uploadOk = 1;
+    // var_dump($targetFile);
+    $imageFileType = strtolower(pathinfo($targetFile,PATHINFO_EXTENSION));
+    // var_dump($imageFileType);
+    $check = getimagesize($_FILES['image']['tmp_name']);
+    if($check !== false){
+        // echo 'its image - ' . $check['mime'] . '.';
+        $uploadOk = 1;
+    } else {
+        // echo 'its not image';
+        $uploadOk = 0;
+    }
+
+    if ($uploadOk == 0) {
+        // echo "Sorry, your file was not uploaded.";
+    } else {
+        if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile)) {
+            // echo "The file ". basename( $_FILES["image"]["name"]). " has been uploaded.";
+        } else {
+            // echo "Sorry, there was an error uploading your file.";
+        }
+    }  
+
+    if (!empty ($_POST)) {
+        $pass1 = $_POST['pass1'];
+        $pass2 = $_POST['pass2'];
+        
+        if ($pass1 == $pass2){
+
+            unset($_POST['pass2']);
+            
+            $_POST['pass1'] = md5($_POST['pass1']);
+
+            $name = $_POST['name'];
+            $lastname = $_POST['pavarde'];
+            $email = $_POST['email'];
+            $password = $_POST['pass1'];
+            $amzius = $_POST['amzius'];
+            $gender = $_POST['lytis'];
+            $city = $_POST['miestai'];
+            $targetFile = $targetDir . basename($_FILES['image']['name']);
+
+            $sql = "insert into users (name, lastname, email, password, amzius, city, gender, picture )
+            values ('$name', '$lastname', '$email', '$password', '$amzius', '$city', '$gender', '$targetFile' )";
+
+            // var_dump($sql);
+
+            if(!mysqli_query($con, $sql)){
+                echo 'not inserted';
+            } else {
+                header("location: loginDB.php");
+            }
+
+        } else {
+            echo '<br>' . 'Slaptazodziai nesupamta';
+        }
+    }
+}
 ?>
 
 <div class="regform">
@@ -110,75 +174,6 @@
         </form>  
     </div>
 </div>
-
-
-<?php  
-/** REGISTRACIJA SU SLAPTAZODZIU DUOMENU BAZEJE */
-
-if(isset($_POST['pateikti'])){
-
-    $targetDir = "pictures/";
-    $targetFile = $targetDir . basename($_FILES['image']['name']);
-    $uploadOk = 1;
-    // var_dump($targetFile);
-    $imageFileType = strtolower(pathinfo($targetFile,PATHINFO_EXTENSION));
-    // var_dump($imageFileType);
-    $check = getimagesize($_FILES['image']['tmp_name']);
-    if($check !== false){
-        echo 'its image - ' . $check['mime'] . '.';
-        $uploadOk = 1;
-    } else {
-        echo 'its not image';
-        $uploadOk = 0;
-    }
-
-    if ($uploadOk == 0) {
-        echo "Sorry, your file was not uploaded.";
-    } else {
-        if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile)) {
-            echo "The file ". basename( $_FILES["image"]["name"]). " has been uploaded.";
-        } else {
-            echo "Sorry, there was an error uploading your file.";
-        }
-    }  
-
-    if (!empty ($_POST)) {
-        $pass1 = $_POST['pass1'];
-        $pass2 = $_POST['pass2'];
-        
-        if ($pass1 == $pass2){
-
-            unset($_POST['pass2']);
-            
-            $_POST['pass1'] = md5($_POST['pass1']);
-
-            $name = $_POST['name'];
-            $lastname = $_POST['pavarde'];
-            $email = $_POST['email'];
-            $password = $_POST['pass1'];
-            $amzius = $_POST['amzius'];
-            $gender = $_POST['lytis'];
-            $city = $_POST['miestai'];
-            $targetFile = $targetDir . basename($_FILES['image']['name']);
-
-            $sql = "insert into users (name, lastname, email, password, amzius, city, gender, picture )
-            values ('$name', '$lastname', '$email', '$password', '$amzius', '$city', '$gender', '$targetFile' )";
-
-            // var_dump($sql);
-
-            if(!mysqli_query($con, $sql)){
-                echo 'not inserted';
-            } else {
-                echo 'inserted';
-            }
-
-        } else {
-            echo '<br>' . 'Slaptazodziai nesupamta';
-        }
-    }
-}
-?>
-
 
 <?php
 include 'footer.php'; 

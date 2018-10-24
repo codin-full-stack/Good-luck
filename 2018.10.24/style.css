@@ -3,6 +3,7 @@
 }
 body{
     background-color: #4AA272;
+    margin: 0;
 }
 
 a {
@@ -145,15 +146,16 @@ label {
 
 .regform {
     background-color: #FFFFFF;
-    position: absolute;
+    margin-top: 100px;
     width: 333px;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     height: 430px;
-    overflow:auto;
+    overflow: auto;
     max-width: 100%;
     max-height: 100%;
 }
@@ -336,7 +338,7 @@ img {
     font-size: xx-large;
     color: #FFFFFF;
     position: absolute;
-    bottom: 5px;
+    bottom: 0;
     background-color: #add8e678;
 }
 
@@ -475,8 +477,8 @@ img {
     .navbarlist.menu-active {
         display: flex;
         width: 100%;
-        max-height: 850px;
-        height: 850px;
+        max-height: 974px;
+        height: 977px;
         transition: 0.6s;
         background-color: #000000;
     }
@@ -510,7 +512,7 @@ img {
     }
 }
 
-@media (max-width:320px){
+@media (max-width:425px){
 
     ul {
         position: static;
@@ -787,7 +789,9 @@ tr a {
 .bottom-box {
     background-color: #515a7d;
 }
-
+.bottom-box .button-large {
+    padding-left: 19px;
+}
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -911,7 +915,6 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 0;
     width: 100%;
     text-align: center;
-
 }
 
 .footer .footer-text {

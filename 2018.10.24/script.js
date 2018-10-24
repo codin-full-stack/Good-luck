@@ -39,32 +39,32 @@ nav.innerHTML += "Iki kaledu liko: " + days + " Dienos";
 
 
 /** LOOP POSTU ATVAIZDAVIME */
-var content = document.querySelectorAll(".content-box");
-var contentArray = Array.prototype.slice.call(content); /** NODELIST TO ARRAY PAVERTIMAS */
-var trim = contentArray.slice(2, 3); /** APKERPAM(REDAGUOJAM) NUO ANTRO ELEMENTO IKI TRECIO */
+// var content = document.querySelectorAll(".content-box");
+// var contentArray = Array.prototype.slice.call(content); /** NODELIST TO ARRAY PAVERTIMAS */
+// var trim = contentArray.slice(2, 3); /** APKERPAM(REDAGUOJAM) NUO ANTRO ELEMENTO IKI TRECIO */
 
-for (var i = 0; i < trim.length; ++i) {
+// for (var i = 0; i < trim.length; ++i) {
 
-    trim[i].style.backgroundImage = "url(monkey.jpg)";
-    trim[i].style.backgroundSize = "100%";
-    trim[i].style.borderColor = "green";
-}
+//     trim[i].style.backgroundImage = "url(monkey.jpg)";
+//     trim[i].style.backgroundSize = "100%";
+//     trim[i].style.borderColor = "green";
+// }
 
 
-var title = document.querySelectorAll(".content-title");
+// var title = document.querySelectorAll(".content-title");
 
-for (var j = 0; j < title.length; ++j) {
+// for (var j = 0; j < title.length; ++j) {
     
-    title[j].style.fontStyle = "italic";
-    title[j].style.fontSize = "25px";
-}
+//     title[j].style.fontStyle = "italic";
+//     title[j].style.fontSize = "25px";
+// }
 
-/** LOOP VARTOTOJU LENTELEI */
-var trs = document.querySelectorAll(".vartotoju-lentele tbody tr:nth-child(2n)");
+// /** LOOP VARTOTOJU LENTELEI */
+// var trs = document.querySelectorAll(".vartotoju-lentele tbody tr:nth-child(2n)");
 
-for (var g = 0; g < trs.length; ++g) {
-    trs[g].style.backgroundColor = "#EDECFE";
-}
+// for (var g = 0; g < trs.length; ++g) {
+//     trs[g].style.backgroundColor = "#EDECFE";
+// }
 
 
 

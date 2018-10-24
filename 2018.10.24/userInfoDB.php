@@ -5,14 +5,10 @@ include 'header.php';
 <div class="profileInfo">
 <?php
 if (isset($_SESSION['id'])){
-    $sql = "select * from users where id='".$_SESSION['id']."' ";
-    
-    // var_dump($sql);
+    $sql = "select * from users where id='".$_SESSION['id']."' ";    
 
     $result = $con->query($sql);
     $user = $result->fetch_assoc(); 
-
-    // var_dump($user);
 
     if(!empty($user)){
         unset($user['password']);
@@ -29,8 +25,12 @@ if (isset($_SESSION['id'])){
             '5'=>'Panevezys'
         ];
         
-        foreach ($user as $key => $value) {            
-            echo $key . ': ' . $value . '<br>';
+        foreach ($user as $key => $value) {
+            if($key == 'city'){
+                echo $key . ': ' . $cities[$value] . '<br>';
+            } else {           
+                echo $key . ': ' . $value . '<br>';
+            }
         }    
     }
 ?>

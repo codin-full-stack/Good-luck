@@ -2,7 +2,7 @@
 </body>
 <div class="footer">
     <div class="footer-text">
-        © Visos teises saugomos bla bla bla....
+        © Visos teises saugomos....
     </div>
 </div>
 </html>
