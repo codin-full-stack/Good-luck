@@ -59,12 +59,12 @@ nav.innerHTML += "Iki kaledu liko: " + days + " Dienos";
 //     title[j].style.fontSize = "25px";
 // }
 
-// /** LOOP VARTOTOJU LENTELEI */
-// var trs = document.querySelectorAll(".vartotoju-lentele tbody tr:nth-child(2n)");
+/** LOOP VARTOTOJU LENTELEI */
+var trs = document.querySelectorAll(".vartotoju-lentele tbody tr:nth-child(2n)");
 
-// for (var g = 0; g < trs.length; ++g) {
-//     trs[g].style.backgroundColor = "#EDECFE";
-// }
+for (var g = 0; g < trs.length; ++g) {
+    trs[g].style.backgroundColor = "#EDECFE";
+}
 
 
 
@@ -124,20 +124,20 @@ btn.addEventListener('click', function (e){
 
 /** USER PROFILE INFO BUTTON */
 
-var userBtn = document.querySelector(".dropDown button");
-// console.log(userBtn);
-var userBtnInfo = document.querySelector(".navbarProfile .dropDown-content");
-if(userBtn && userBtnInfo) {
-        // console.log(userBtnInfo);
-    userBtn.addEventListener('click', function (){
-        // console.log(userBtn);
-        if (userBtnInfo.classList.contains("subMenu-active")){
-            userBtnInfo.classList.remove("subMenu-active")
-        } else {
-            userBtnInfo.classList.add("subMenu-active");
-        }
-    });
-}
+// var userBtn = document.querySelector(".dropDown button");
+// // console.log(userBtn);
+// var userBtnInfo = document.querySelector(".navbarProfile .dropDown-content");
+// if(userBtn && userBtnInfo) {
+//         // console.log(userBtnInfo);
+//     userBtn.addEventListener('click', function (){
+//         // console.log(userBtn);
+//         if (userBtnInfo.classList.contains("subMenu-active")){
+//             userBtnInfo.classList.remove("subMenu-active")
+//         } else {
+//             userBtnInfo.classList.add("subMenu-active");
+//         }
+//     });
+// }
 
 /**___________________________________ */
 
@@ -191,3 +191,17 @@ for (var l = 0; l < btn.length; ++l) {
 // inputField.addEventListener('change', function(){
     
 // })
+/**___________________________ */
+
+
+
+/**____ POST DELETE CONFIRMATION___ */
+var elems = document.querySelector('confirmation');
+var confirmIt = function (e) {
+    if (!confirm('Are you sure?')) e.preventDefault();
+};
+for (var i = 0, l = elems.length; i < l; i++) {
+    elems[i].addEventListener('click', confirmIt, false);
+}
+
+

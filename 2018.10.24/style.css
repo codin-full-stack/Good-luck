@@ -300,6 +300,8 @@ button {
     margin-right: auto;
     margin-left: auto;
     flex-wrap: wrap;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
     justify-content:space-around;
 }      
 

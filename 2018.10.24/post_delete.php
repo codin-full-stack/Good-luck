@@ -1,8 +1,8 @@
 <?php
 include 'header.php';
 
-var_dump($_GET);
-var_dump($_GET['id']);
+// var_dump($_GET);
+// var_dump($_GET['id']);
 
 
 

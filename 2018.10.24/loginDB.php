@@ -49,38 +49,38 @@ include 'header.php';
                 </form>                
             </div>   
         </div>
+        <?php
+            if (!empty($_POST)){
+                
+                $email = $_POST['email'];
+                $sql = "select * from users where email='$email' ";
 
+                $result = $con->query($sql);
+                $user = $result->fetch_assoc();
+
+                if (!empty($user['email'])){
+
+                    $loginpass = md5($_POST['loginpass']);
+                    
+                    if ($loginpass == $user['password']){ 
+                        
+                        $_SESSION['id'] = $user['id'];
+
+                        header('Location: userInfoDB.php');
+                        exit;
+                    
+                    } else {
+                        echo 'Blogas slaptazodis';
+                    }
+                } else {
+                    echo 'Vartotojas su tokiu el.pastu neregistruotas!';
+                }
+            }
+        ?>
     </div>
 </body>
 
+
 <?php
-if (!empty($_POST)){
-    $email = $_POST['email'];
-    $sql = "select * from users where email='$email' ";
-
-    // var_dump($sql);
-
-    $result = $con->query($sql);
-    $user = $result->fetch_assoc();
-
-    // var_dump($user);
-
-    $loginpass = md5($_POST['loginpass']);
-
-    // var_dump($loginpass);
-    
-    if ($loginpass == $user['password']){ 
-        
-        $_SESSION['id'] = $user['id'];
-
-        header('Location: userInfoDB.php');
-        exit;
-       
-    } else {
-        echo 'Blogas slaptazodis';
-    }
-}
-
-
 include 'footer.php';
 ?>

@@ -31,20 +31,20 @@ include 'header.php';
             
                 <div class="info-box">
                     
-                <div class="user-content-title">
-                    <?php echo 'TITLE: ' . '<br>' . $posts['title']; ?>
-                </div> 
+                    <div class="user-content-title">
+                        <?php echo '<strong>TITLE: </strong>' . '<br>' . $posts['title']; ?>
+                    </div> 
 
-                <div class="user-post-content">
-                    <?php echo 'CONTENT: ' . '<br>' . substr($posts['content'], 0, 220); ?>
-                </div>
+                    <div class="user-post-content">
+                        <?php echo '<strong>CONTENT: </strong>' . '<br>' . substr($posts['content'], 0, 220); ?>
+                    </div>
                 
                 </div>
                 
                 <div class="post-buttons">
                     <?php
                         echo '<a href="post_edit.php?id='.$posts['id'].'">EDIT POST</a> &nbsp&nbsp&nbsp  <br> <br>';
-                        echo '<a href="post_delete.php?id='.$posts['id'].'">DELETE POST</a> &nbsp&nbsp&nbsp  <br> <br>';
+                        echo '<a href="post_delete.php?id='.$posts['id'].'" class="confirmation">DELETE POST</a> &nbsp&nbsp&nbsp  <br> <br>';
                         if($num_com == 0){
                             echo $num_com . '&nbsp&nbsp&nbsp Komentaru';
                         } else {
