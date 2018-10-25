@@ -52,7 +52,7 @@ if(isset($_POST['pateikti'])){
             values ('$name', '$lastname', '$email', '$password', '$amzius', '$city', '$gender', '$targetFile' )";
 
             // var_dump($sql);
-            // var_dump($con);
+
             if(!mysqli_query($con, $sql)){
                 echo 'not inserted';
             } else {
